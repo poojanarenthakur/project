@@ -1,0 +1,32 @@
+<style>
+    .toolbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background-color: #1976d2;
+        color: white;
+        font-weight: 600;
+    }
+    
+    .toolbar img {
+        margin: 0 16px;
+    }
+</style>
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+    <img width="150" alt="Angular Logo" src="https://interspark.com/wp-content/themes/interspark/images/logo.png" />
+    <span style="font-size: 16px;">Welcome</span>
+    <!-- <div class="spacer"></div> -->
+    <button type="button" [routerLink]="['new']" class="btn btn-outline-primary" style="margin-inline-start: auto;;background-color: white;
+    color: #1976d2;">Create Job</button>
+    <!-- <button type="button" class="btn btn-primary"  style="margin-left: 82%;">
+        Add Jobs
+        </button> -->
+</div>
+
+<router-outlet></router-outlet>

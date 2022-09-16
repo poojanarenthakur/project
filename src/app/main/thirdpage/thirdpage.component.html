@@ -1,0 +1,14 @@
+<br><br><br><br>
+<div class="container">
+    <form [formGroup]="newtask" (submit)="update()">
+        <!-- {{this.newtask.value | json}} -->
+        <input type="text" class="form-control" placeholder="job_number" formControlName="job_number" aria-describedby="basic-addon1"><br>
+        <input type="text" class="form-control" placeholder="job_title" formControlName="job_title" aria-describedby="basic-addon1"><br>
+        <input type="text" class="form-control" placeholder="job_start_date" formControlName="job_start_date" aria-describedby="basic-addon1"><br>
+        <input type="text" class="form-control" placeholder="job_close_date" formControlName="job_close_date" aria-describedby="basic-addon1"><br>
+        <input type="text" class="form-control" placeholder="experience_required" formControlName="experience_required" aria-describedby="basic-addon1"><br>
+        <input type="text" class="form-control" placeholder="number_of_openings" formControlName="number_of_openings" aria-describedby="basic-addon1"><br>
+        <input type="text" class="form-control" placeholder="job_notes" formControlName="job_notes" aria-describedby="basic-addon1"><br>
+        <input type="submit">
+    </form>
+</div>
